@@ -1,9 +1,46 @@
+
 import { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
-import "./App.css";;
+import "./App.css";
 
 const API_URL = "http://localhost:8000";
+
+function MarkdownCode({ className, children, ...props }) {
+  const [copied, setCopied] = useState(false);
+  const isBlock = Boolean(className);
+  const code = String(children).replace(/\n$/, "");
+
+  async function copyCode() {
+    try {
+      await navigator.clipboard.writeText(code);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      console.error("Could not copy code.");
+    }
+  }
+
+  if (!isBlock) {
+    return <code {...props}>{children}</code>;
+  }
+
+  return (
+    <div className="code-block">
+      <div className="code-toolbar">
+        <span>{className.replace("language-", "") || "Code"}</span>
+        <button onClick={copyCode} className="copy-code">
+          {copied ? "Copied!" : "Copy code"}
+        </button>
+      </div>
+      <pre>
+        <code className={className} {...props}>
+          {children}
+        </code>
+      </pre>
+    </div>
+  );
+}
 
 function App() {
   const [models, setModels] = useState([]);
@@ -12,41 +49,51 @@ function App() {
   const [response, setResponse] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
+  const [copied, setCopied] = useState(false);
+  const [connection, setConnection] = useState("checking");
 
   useEffect(() => {
     loadModels();
   }, []);
 
   async function loadModels() {
-    try {
-      setError("");
+    setConnection("checking");
+    setError("");
 
+    try {
       const result = await fetch(`${API_URL}/api/models`);
 
       if (!result.ok) {
-        throw new Error("Could not connect to Ollama.");
+        throw new Error("Could not retrieve Ollama models.");
       }
 
       const data = await result.json();
-
       setModels(data.models || []);
 
-      if (data.models?.length > 0) {
-        setSelectedModel(data.models[0]);
-      } else {
-        setError("No Ollama models found. Install a model first.");
+      setSelectedModel((current) =>
+        data.models.includes(current)
+          ? current
+          : data.models[0] || ""
+      );
+
+      setConnection(data.models.length ? "connected" : "empty");
+
+      if (!data.models.length) {
+        setError("No models found. Install an Ollama model first.");
       }
     } catch (err) {
+      setConnection("offline");
       setError(err.message);
     }
   }
 
   async function generateResponse() {
-    if (!prompt.trim() || !selectedModel) return;
+    if (!prompt.trim() || !selectedModel || loading) return;
 
     setLoading(true);
     setError("");
     setResponse("");
+    setCopied(false);
 
     try {
       const result = await fetch(`${API_URL}/api/generate`, {
@@ -74,83 +121,186 @@ function App() {
     }
   }
 
+  async function copyResponse() {
+    try {
+      await navigator.clipboard.writeText(response);
+      setCopied(true);
+      setTimeout(() => setCopied(false), 1500);
+    } catch {
+      setError("Unable to copy response.");
+    }
+  }
+
+  function clearWorkspace() {
+    if (loading) return;
+    setPrompt("");
+    setResponse("");
+    setError("");
+    setCopied(false);
+  }
+
   return (
     <main className="app">
       <header className="header">
-        <div className="logo">LOCAL AI</div>
-        <span className="status">Local environment</span>
+        <div className="brand">
+          <div className="brand-icon">AI</div>
+          <span>LOCAL AI</span>
+        </div>
+
+        <div className="header-right">
+          <span className={`connection ${connection}`}>
+            <span className="status-dot" />
+            {connection === "connected"
+              ? "Ollama connected"
+              : connection === "checking"
+              ? "Checking connection"
+              : "Ollama unavailable"}
+          </span>
+        </div>
       </header>
 
       <section className="workspace">
         <div className="intro">
-          <h1>AI Workspace</h1>
+          <span className="eyebrow">LOCAL AI WORKSPACE</span>
+          <h1>What can I help you with?</h1>
           <p>
-            Enter your text and let your local AI model
-            process it.
+            Your AI assistant, powered entirely by locally
+            running models.
           </p>
         </div>
 
-        <div className="panel">
-          <label>Select AI Model</label>
-
-          <div className="model-row">
-            <select
-              value={selectedModel}
-              onChange={(e) => setSelectedModel(e.target.value)}
-            >
-              {models.map((model) => (
-                <option key={model} value={model}>
-                  {model}
-                </option>
-              ))}
-            </select>
+        <section className="panel">
+          <div className="panel-top">
+            <div>
+              <label htmlFor="model">AI MODEL</label>
+              <p className="field-description">
+                Choose an installed Ollama model
+              </p>
+            </div>
 
             <button
               className="refresh"
               onClick={loadModels}
-              disabled={loading}
+              disabled={connection === "checking" || loading}
+              title="Refresh available models"
             >
-              Refresh
+              ↻ Refresh
             </button>
           </div>
 
-          <label htmlFor="prompt">Your Input</label>
+          <select
+            id="model"
+            value={selectedModel}
+            onChange={(e) => setSelectedModel(e.target.value)}
+            disabled={!models.length || loading}
+          >
+            {models.length === 0 && (
+              <option value="">No models available</option>
+            )}
+
+            {models.map((model) => (
+              <option key={model} value={model}>
+                {model}
+              </option>
+            ))}
+          </select>
+
+          <div className="input-heading">
+            <label htmlFor="prompt">YOUR PROMPT</label>
+            <span>{prompt.length.toLocaleString()} characters</span>
+          </div>
 
           <textarea
             id="prompt"
-            placeholder="Enter your text or instructions here..."
+            placeholder="Ask anything... e.g. Create a Python palindrome function."
             value={prompt}
             onChange={(e) => setPrompt(e.target.value)}
+            onKeyDown={(e) => {
+              if (e.key === "Enter" && e.metaKey) {
+                generateResponse();
+              }
+            }}
+            disabled={loading}
           />
 
-          <button
-            className="generate"
-            onClick={generateResponse}
-            disabled={loading || !prompt.trim() || !selectedModel}
-          >
-            {loading ? "Processing..." : "Generate Response"}
-          </button>
+          <div className="actions">
+            <button
+              className="clear-button"
+              onClick={clearWorkspace}
+              disabled={loading || (!prompt && !response)}
+            >
+              Clear
+            </button>
 
-          {error && (
-            <div className="error">{error}</div>
-          )}
-        </div>
+            <button
+              className="generate"
+              onClick={generateResponse}
+              disabled={loading || !prompt.trim() || !selectedModel}
+            >
+              {loading ? (
+                <>
+                  <span className="spinner" />
+                  Generating...
+                </>
+              ) : (
+                <>
+                  Generate response <span>→</span>
+                </>
+              )}
+            </button>
+          </div>
+
+          <div className="keyboard-hint">
+            Press <kbd>⌘</kbd> + <kbd>Enter</kbd> to generate
+          </div>
+
+          {error && <div className="error">{error}</div>}
+        </section>
 
         {(response || loading) && (
-          <div className="panel output">
-            <h2>AI Response</h2>
+          <section className="panel output">
+            <div className="output-header">
+              <div>
+                <span className="eyebrow">GENERATED OUTPUT</span>
+                <h2>Response</h2>
+              </div>
+
+              {response && (
+                <button className="copy-response" onClick={copyResponse}>
+                  {copied ? "✓ Copied" : "Copy response"}
+                </button>
+              )}
+            </div>
 
             {loading ? (
-              <p>Waiting for Ollama...</p>
+              <div className="loading-state">
+                <span className="spinner" />
+                <p>Waiting for your local AI model...</p>
+                <span>This may take a moment.</span>
+              </div>
             ) : (
-              <div className="response-text">
-              <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                {response}
-              </ReactMarkdown>
-            </div>
+              <article className="response-text">
+                <ReactMarkdown
+                  remarkPlugins={[remarkGfm]}
+                  components={{ code: MarkdownCode }}
+                >
+                  {response}
+                </ReactMarkdown>
+              </article>
             )}
-          </div>
+
+            {response && (
+              <div className="output-footer">
+                Generated with {selectedModel}
+              </div>
+            )}
+          </section>
         )}
+
+        <footer className="footer">
+          <span>LOCAL AI GENERATOR</span>
+          <span>Powered by Ollama</span>
+        </footer>
       </section>
     </main>
   );
