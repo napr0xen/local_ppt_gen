@@ -1,0 +1,5428 @@
+{
+  "template_name": "procurement_test_template.pptx",
+  "slide_count": 10,
+  "dimensions_inches": {
+    "width": 10.0,
+    "height": 5.625
+  },
+  "slides": [
+    {
+      "slide_number": 1,
+      "elements": [
+        {
+          "id": "slide_1_shape_1",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 1.2,
+            "width": 5.6,
+            "height": 0.35
+          },
+          "text": "PROCUREMENT DEPARTMENT",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_1_shape_2",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 1.6,
+            "width": 5.6,
+            "height": 1.3
+          },
+          "text": "[Presentation Title]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[Presentation Title]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_1_shape_3",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 2.95,
+            "width": 5.6,
+            "height": 0.5
+          },
+          "text": "[Period]  ·  [Subtitle / scope of review]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[Period]",
+            "[Subtitle / scope of review]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_1_shape_4",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 4.3,
+            "width": 5.6,
+            "height": 0.4
+          },
+          "text": "[Presenter Name], [Role]  ·  [DD Month YYYY]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[Presenter Name]",
+            "[Role]",
+            "[DD Month YYYY]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_1_shape_5",
+          "name": "Handshake icon circle",
+          "type": "text",
+          "position": {
+            "x": 7.15,
+            "y": 1.35,
+            "width": 1.7,
+            "height": 1.7
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_1_shape_6",
+          "name": "Image 0",
+          "type": "image",
+          "position": {
+            "x": 7.575,
+            "y": 1.775,
+            "width": 0.85,
+            "height": 0.85
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_1_shape_7",
+          "name": "Logo placeholder",
+          "type": "text",
+          "position": {
+            "x": 6.95,
+            "y": 3.6,
+            "width": 2.1,
+            "height": 0.9
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_1_shape_8",
+          "name": "Text 6",
+          "type": "text",
+          "position": {
+            "x": 6.95,
+            "y": 3.6,
+            "width": 2.1,
+            "height": 0.9
+          },
+          "text": "[Company Logo]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Company Logo]"
+          ],
+          "protected_candidate": true,
+          "mappable": false
+        }
+      ]
+    },
+    {
+      "slide_number": 2,
+      "elements": [
+        {
+          "id": "slide_2_shape_1",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.35,
+            "width": 8.65,
+            "height": 0.55
+          },
+          "text": "Agenda",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_2",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.9,
+            "width": 8.65,
+            "height": 0.32
+          },
+          "text": "[What we will cover today]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[What we will cover today]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_2_shape_3",
+          "name": "Agenda item 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 1.45,
+            "width": 4.25,
+            "height": 0.92
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_4",
+          "name": "Text 3",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 1.45,
+            "width": 0.8,
+            "height": 0.92
+          },
+          "text": "01",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_5",
+          "name": "Text 4",
+          "type": "text",
+          "position": {
+            "x": 1.85,
+            "y": 1.45,
+            "width": 3.1,
+            "height": 0.92
+          },
+          "text": "Executive Summary\n[Short description]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Short description]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_2_shape_6",
+          "name": "Agenda item 2",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 2.57,
+            "width": 4.25,
+            "height": 0.92
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_7",
+          "name": "Text 6",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 2.57,
+            "width": 0.8,
+            "height": 0.92
+          },
+          "text": "02",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_8",
+          "name": "Text 7",
+          "type": "text",
+          "position": {
+            "x": 1.85,
+            "y": 2.57,
+            "width": 3.1,
+            "height": 0.92
+          },
+          "text": "Spend Overview\n[Short description]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Short description]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_2_shape_9",
+          "name": "Agenda item 3",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 3.69,
+            "width": 4.25,
+            "height": 0.92
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_10",
+          "name": "Text 9",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 3.69,
+            "width": 0.8,
+            "height": 0.92
+          },
+          "text": "03",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_11",
+          "name": "Text 10",
+          "type": "text",
+          "position": {
+            "x": 1.85,
+            "y": 3.69,
+            "width": 3.1,
+            "height": 0.92
+          },
+          "text": "Savings & KPIs\n[Short description]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Short description]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_2_shape_12",
+          "name": "Agenda item 4",
+          "type": "text",
+          "position": {
+            "x": 5.25,
+            "y": 1.45,
+            "width": 4.25,
+            "height": 0.92
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_13",
+          "name": "Text 12",
+          "type": "text",
+          "position": {
+            "x": 5.45,
+            "y": 1.45,
+            "width": 0.8,
+            "height": 0.92
+          },
+          "text": "04",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_14",
+          "name": "Text 13",
+          "type": "text",
+          "position": {
+            "x": 6.25,
+            "y": 1.45,
+            "width": 3.1,
+            "height": 0.92
+          },
+          "text": "Supplier Performance\n[Short description]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Short description]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_2_shape_15",
+          "name": "Agenda item 5",
+          "type": "text",
+          "position": {
+            "x": 5.25,
+            "y": 2.57,
+            "width": 4.25,
+            "height": 0.92
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_16",
+          "name": "Text 15",
+          "type": "text",
+          "position": {
+            "x": 5.45,
+            "y": 2.57,
+            "width": 0.8,
+            "height": 0.92
+          },
+          "text": "05",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_17",
+          "name": "Text 16",
+          "type": "text",
+          "position": {
+            "x": 6.25,
+            "y": 2.57,
+            "width": 3.1,
+            "height": 0.92
+          },
+          "text": "Sourcing Pipeline\n[Short description]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Short description]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_2_shape_18",
+          "name": "Agenda item 6",
+          "type": "text",
+          "position": {
+            "x": 5.25,
+            "y": 3.69,
+            "width": 4.25,
+            "height": 0.92
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_19",
+          "name": "Text 18",
+          "type": "text",
+          "position": {
+            "x": 5.45,
+            "y": 3.69,
+            "width": 0.8,
+            "height": 0.92
+          },
+          "text": "06",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_2_shape_20",
+          "name": "Text 19",
+          "type": "text",
+          "position": {
+            "x": 6.25,
+            "y": 3.69,
+            "width": 3.1,
+            "height": 0.92
+          },
+          "text": "Risks & Decisions\n[Short description]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Short description]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_2_shape_21",
+          "name": "Slide Number Placeholder 0",
+          "type": "text",
+          "position": {
+            "x": 0.08,
+            "y": 5.32,
+            "width": 0.5,
+            "height": 0.25
+          },
+          "text": "2",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        }
+      ]
+    },
+    {
+      "slide_number": 3,
+      "elements": [
+        {
+          "id": "slide_3_shape_1",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.35,
+            "width": 8.65,
+            "height": 0.55
+          },
+          "text": "Executive Summary",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_2",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.9,
+            "width": 8.65,
+            "height": 0.32
+          },
+          "text": "[Headline message for the period]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[Headline message for the period]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_3_shape_3",
+          "name": "KPI card 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 1.4,
+            "width": 2.05,
+            "height": 1.75
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_4",
+          "name": "[Total spend] circle",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 1.57,
+            "width": 0.5,
+            "height": 0.5
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_5",
+          "name": "Image 0",
+          "type": "image",
+          "position": {
+            "x": 1.175,
+            "y": 1.695,
+            "width": 0.25,
+            "height": 0.25
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_6",
+          "name": "Text 4",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 2.15,
+            "width": 1.7,
+            "height": 0.55
+          },
+          "text": "[Value]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Value]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_3_shape_7",
+          "name": "Text 5",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 2.7,
+            "width": 1.75,
+            "height": 0.35
+          },
+          "text": "[Total spend]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Total spend]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_3_shape_8",
+          "name": "KPI card 2",
+          "type": "text",
+          "position": {
+            "x": 3.05,
+            "y": 1.4,
+            "width": 2.05,
+            "height": 1.75
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_9",
+          "name": "[Savings delivered] circle",
+          "type": "text",
+          "position": {
+            "x": 3.25,
+            "y": 1.57,
+            "width": 0.5,
+            "height": 0.5
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_10",
+          "name": "Image 1",
+          "type": "image",
+          "position": {
+            "x": 3.375,
+            "y": 1.695,
+            "width": 0.25,
+            "height": 0.25
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_11",
+          "name": "Text 8",
+          "type": "text",
+          "position": {
+            "x": 3.25,
+            "y": 2.15,
+            "width": 1.7,
+            "height": 0.55
+          },
+          "text": "[Value]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Value]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_3_shape_12",
+          "name": "Text 9",
+          "type": "text",
+          "position": {
+            "x": 3.25,
+            "y": 2.7,
+            "width": 1.75,
+            "height": 0.35
+          },
+          "text": "[Savings delivered]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Savings delivered]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_3_shape_13",
+          "name": "KPI card 3",
+          "type": "text",
+          "position": {
+            "x": 5.25,
+            "y": 1.4,
+            "width": 2.05,
+            "height": 1.75
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_14",
+          "name": "[Spend under contract] circle",
+          "type": "text",
+          "position": {
+            "x": 5.45,
+            "y": 1.57,
+            "width": 0.5,
+            "height": 0.5
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_15",
+          "name": "Image 2",
+          "type": "image",
+          "position": {
+            "x": 5.575,
+            "y": 1.695,
+            "width": 0.25,
+            "height": 0.25
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_16",
+          "name": "Text 12",
+          "type": "text",
+          "position": {
+            "x": 5.45,
+            "y": 2.15,
+            "width": 1.7,
+            "height": 0.55
+          },
+          "text": "[Value]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Value]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_3_shape_17",
+          "name": "Text 13",
+          "type": "text",
+          "position": {
+            "x": 5.45,
+            "y": 2.7,
+            "width": 1.75,
+            "height": 0.35
+          },
+          "text": "[Spend under contract]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Spend under contract]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_3_shape_18",
+          "name": "KPI card 4",
+          "type": "text",
+          "position": {
+            "x": 7.45,
+            "y": 1.4,
+            "width": 2.05,
+            "height": 1.75
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_19",
+          "name": "[PR-to-PO cycle time] circle",
+          "type": "text",
+          "position": {
+            "x": 7.65,
+            "y": 1.57,
+            "width": 0.5,
+            "height": 0.5
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_20",
+          "name": "Image 3",
+          "type": "image",
+          "position": {
+            "x": 7.775,
+            "y": 1.695,
+            "width": 0.25,
+            "height": 0.25
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_21",
+          "name": "Text 16",
+          "type": "text",
+          "position": {
+            "x": 7.65,
+            "y": 2.15,
+            "width": 1.7,
+            "height": 0.55
+          },
+          "text": "[Value]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Value]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_3_shape_22",
+          "name": "Text 17",
+          "type": "text",
+          "position": {
+            "x": 7.65,
+            "y": 2.7,
+            "width": 1.75,
+            "height": 0.35
+          },
+          "text": "[PR-to-PO cycle time]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[PR-to-PO cycle time]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_3_shape_23",
+          "name": "Text 18",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 3.35,
+            "width": 8.65,
+            "height": 0.35
+          },
+          "text": "Key messages",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_3_shape_24",
+          "name": "Text 19",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 3.7,
+            "width": 8.65,
+            "height": 1.15
+          },
+          "text": "[Key message 1]\n[Key message 2]\n[Key message 3]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Key message 1]",
+            "[Key message 2]",
+            "[Key message 3]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_3_shape_25",
+          "name": "Slide Number Placeholder 0",
+          "type": "text",
+          "position": {
+            "x": 0.08,
+            "y": 5.32,
+            "width": 0.5,
+            "height": 0.25
+          },
+          "text": "3",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        }
+      ]
+    },
+    {
+      "slide_number": 4,
+      "elements": [
+        {
+          "id": "slide_4_shape_1",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.35,
+            "width": 8.65,
+            "height": 0.55
+          },
+          "text": "Spend Overview",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_4_shape_2",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.9,
+            "width": 8.65,
+            "height": 0.32
+          },
+          "text": "[Key message on spend distribution]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[Key message on spend distribution]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_4_shape_3",
+          "name": "Spend by category chart",
+          "type": "chart",
+          "position": {
+            "x": 0.85,
+            "y": 1.35,
+            "width": 5.3,
+            "height": 3.5
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false,
+          "chart": {
+            "chart_type": "BAR_CLUSTERED (57)",
+            "series": [
+              {
+                "name": "Spend",
+                "values": [
+                  6.0,
+                  5.0,
+                  4.0,
+                  3.0,
+                  2.0,
+                  1.0
+                ]
+              }
+            ]
+          },
+          "requires_review": true,
+          "mapping_method": "structured_chart_mapping"
+        },
+        {
+          "id": "slide_4_shape_4",
+          "name": "Commentary panel",
+          "type": "text",
+          "position": {
+            "x": 6.4,
+            "y": 1.35,
+            "width": 3.1,
+            "height": 3.5
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_4_shape_5",
+          "name": "Text 3",
+          "type": "text",
+          "position": {
+            "x": 6.6,
+            "y": 1.5,
+            "width": 2.7,
+            "height": 0.35
+          },
+          "text": "Commentary",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_4_shape_6",
+          "name": "Text 4",
+          "type": "text",
+          "position": {
+            "x": 6.6,
+            "y": 1.9,
+            "width": 2.75,
+            "height": 2.8
+          },
+          "text": "[Insight 1]\n[Insight 2]\n[Insight 3]\n[Opportunity]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Insight 1]",
+            "[Insight 2]",
+            "[Insight 3]",
+            "[Opportunity]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_4_shape_7",
+          "name": "Slide Number Placeholder 0",
+          "type": "text",
+          "position": {
+            "x": 0.08,
+            "y": 5.32,
+            "width": 0.5,
+            "height": 0.25
+          },
+          "text": "4",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        }
+      ]
+    },
+    {
+      "slide_number": 5,
+      "elements": [
+        {
+          "id": "slide_5_shape_1",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.35,
+            "width": 8.65,
+            "height": 0.55
+          },
+          "text": "Savings & KPIs",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_5_shape_2",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.9,
+            "width": 8.65,
+            "height": 0.32
+          },
+          "text": "[Summary of KPI performance vs target]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[Summary of KPI performance vs target]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_5_shape_3",
+          "name": "KPI table",
+          "type": "table",
+          "position": {
+            "x": 0.85,
+            "y": 1.4,
+            "width": 8.65,
+            "height": 1.0
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false,
+          "table": {
+            "rows": 7,
+            "columns": 4,
+            "cells": [
+              [
+                "KPI",
+                "Target",
+                "Actual",
+                "Status"
+              ],
+              [
+                "Cost savings (YTD)",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Spend under contract",
+                "",
+                "",
+                ""
+              ],
+              [
+                "PR-to-PO cycle time",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Supplier on-time delivery",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Maverick / off-PO spend",
+                "",
+                "",
+                ""
+              ],
+              [
+                "Invoice first-pass match",
+                "",
+                "",
+                ""
+              ]
+            ]
+          },
+          "requires_review": true,
+          "mapping_method": "structured_table_mapping"
+        },
+        {
+          "id": "slide_5_shape_4",
+          "name": "Text 2",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 4.55,
+            "width": 8.65,
+            "height": 0.3
+          },
+          "text": "Status key:  On track ≥ target   ·   At risk within 5%   ·   Off track > 5% from target",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_5_shape_5",
+          "name": "Slide Number Placeholder 0",
+          "type": "text",
+          "position": {
+            "x": 0.08,
+            "y": 5.32,
+            "width": 0.5,
+            "height": 0.25
+          },
+          "text": "5",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        }
+      ]
+    },
+    {
+      "slide_number": 6,
+      "elements": [
+        {
+          "id": "slide_6_shape_1",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.35,
+            "width": 8.65,
+            "height": 0.55
+          },
+          "text": "Supplier Performance",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_6_shape_2",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.9,
+            "width": 8.65,
+            "height": 0.32
+          },
+          "text": "[Strategic supplier scorecard – period]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[Strategic supplier scorecard – period]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_6_shape_3",
+          "name": "Supplier scorecard table",
+          "type": "table",
+          "position": {
+            "x": 0.85,
+            "y": 1.4,
+            "width": 8.65,
+            "height": 1.0
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false,
+          "table": {
+            "rows": 6,
+            "columns": 6,
+            "cells": [
+              [
+                "Supplier",
+                "Category",
+                "Spend",
+                "Quality",
+                "On-time",
+                "Rating"
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                "",
+                "",
+                "",
+                ""
+              ]
+            ]
+          },
+          "requires_review": true,
+          "mapping_method": "structured_table_mapping"
+        },
+        {
+          "id": "slide_6_shape_4",
+          "name": "Text 2",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 4.4,
+            "width": 8.65,
+            "height": 0.4
+          },
+          "text": "[Scoring method / thresholds]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Scoring method / thresholds]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_6_shape_5",
+          "name": "Slide Number Placeholder 0",
+          "type": "text",
+          "position": {
+            "x": 0.08,
+            "y": 5.32,
+            "width": 0.5,
+            "height": 0.25
+          },
+          "text": "6",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        }
+      ]
+    },
+    {
+      "slide_number": 7,
+      "elements": [
+        {
+          "id": "slide_7_shape_1",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.35,
+            "width": 8.65,
+            "height": 0.55
+          },
+          "text": "Sourcing Pipeline",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_7_shape_2",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.9,
+            "width": 8.65,
+            "height": 0.32
+          },
+          "text": "[No. of active sourcing events and total value]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[No. of active sourcing events and total value]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_3",
+          "name": "Stage Requirement",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 1.4,
+            "width": 1.5,
+            "height": 1.0
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_7_shape_4",
+          "name": "Text 3",
+          "type": "text",
+          "position": {
+            "x": 0.93,
+            "y": 1.4,
+            "width": 1.12,
+            "height": 1.0
+          },
+          "text": "[#]\nRequirement",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[#]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_5",
+          "name": "Stage RFx",
+          "type": "text",
+          "position": {
+            "x": 2.29,
+            "y": 1.4,
+            "width": 1.5,
+            "height": 1.0
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_7_shape_6",
+          "name": "Text 5",
+          "type": "text",
+          "position": {
+            "x": 2.57,
+            "y": 1.4,
+            "width": 1.12,
+            "height": 1.0
+          },
+          "text": "[#]\nRFx",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[#]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_7",
+          "name": "Stage Evaluation",
+          "type": "text",
+          "position": {
+            "x": 3.73,
+            "y": 1.4,
+            "width": 1.5,
+            "height": 1.0
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_7_shape_8",
+          "name": "Text 7",
+          "type": "text",
+          "position": {
+            "x": 4.01,
+            "y": 1.4,
+            "width": 1.12,
+            "height": 1.0
+          },
+          "text": "[#]\nEvaluation",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[#]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_9",
+          "name": "Stage Negotiation",
+          "type": "text",
+          "position": {
+            "x": 5.17,
+            "y": 1.4,
+            "width": 1.5,
+            "height": 1.0
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_7_shape_10",
+          "name": "Text 9",
+          "type": "text",
+          "position": {
+            "x": 5.45,
+            "y": 1.4,
+            "width": 1.12,
+            "height": 1.0
+          },
+          "text": "[#]\nNegotiation",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[#]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_11",
+          "name": "Stage Award",
+          "type": "text",
+          "position": {
+            "x": 6.61,
+            "y": 1.4,
+            "width": 1.5,
+            "height": 1.0
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_7_shape_12",
+          "name": "Text 11",
+          "type": "text",
+          "position": {
+            "x": 6.89,
+            "y": 1.4,
+            "width": 1.12,
+            "height": 1.0
+          },
+          "text": "[#]\nAward",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[#]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_13",
+          "name": "Stage Contract",
+          "type": "text",
+          "position": {
+            "x": 8.05,
+            "y": 1.4,
+            "width": 1.5,
+            "height": 1.0
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_7_shape_14",
+          "name": "Text 13",
+          "type": "text",
+          "position": {
+            "x": 8.33,
+            "y": 1.4,
+            "width": 1.12,
+            "height": 1.0
+          },
+          "text": "[#]\nContract",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[#]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_15",
+          "name": "Text 14",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 2.65,
+            "width": 8.65,
+            "height": 0.35
+          },
+          "text": "Upcoming awards (next 90 days)",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_7_shape_16",
+          "name": "Award 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 3.1,
+            "width": 2.75,
+            "height": 1.7
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_7_shape_17",
+          "name": "Text 16",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 3.22,
+            "width": 2.35,
+            "height": 0.55
+          },
+          "text": "[Contract / category name]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Contract / category name]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_18",
+          "name": "Text 17",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 3.8,
+            "width": 2.35,
+            "height": 0.45
+          },
+          "text": "[Value]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Value]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_19",
+          "name": "Text 18",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 4.3,
+            "width": 2.35,
+            "height": 0.3
+          },
+          "text": "Target award: [Month YYYY]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Month YYYY]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_20",
+          "name": "Award 2",
+          "type": "text",
+          "position": {
+            "x": 3.8,
+            "y": 3.1,
+            "width": 2.75,
+            "height": 1.7
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_7_shape_21",
+          "name": "Text 20",
+          "type": "text",
+          "position": {
+            "x": 4.0,
+            "y": 3.22,
+            "width": 2.35,
+            "height": 0.55
+          },
+          "text": "[Contract / category name]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Contract / category name]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_22",
+          "name": "Text 21",
+          "type": "text",
+          "position": {
+            "x": 4.0,
+            "y": 3.8,
+            "width": 2.35,
+            "height": 0.45
+          },
+          "text": "[Value]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Value]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_23",
+          "name": "Text 22",
+          "type": "text",
+          "position": {
+            "x": 4.0,
+            "y": 4.3,
+            "width": 2.35,
+            "height": 0.3
+          },
+          "text": "Target award: [Month YYYY]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Month YYYY]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_24",
+          "name": "Award 3",
+          "type": "text",
+          "position": {
+            "x": 6.75,
+            "y": 3.1,
+            "width": 2.75,
+            "height": 1.7
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_7_shape_25",
+          "name": "Text 24",
+          "type": "text",
+          "position": {
+            "x": 6.95,
+            "y": 3.22,
+            "width": 2.35,
+            "height": 0.55
+          },
+          "text": "[Contract / category name]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Contract / category name]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_26",
+          "name": "Text 25",
+          "type": "text",
+          "position": {
+            "x": 6.95,
+            "y": 3.8,
+            "width": 2.35,
+            "height": 0.45
+          },
+          "text": "[Value]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Value]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_27",
+          "name": "Text 26",
+          "type": "text",
+          "position": {
+            "x": 6.95,
+            "y": 4.3,
+            "width": 2.35,
+            "height": 0.3
+          },
+          "text": "Target award: [Month YYYY]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Month YYYY]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_7_shape_28",
+          "name": "Slide Number Placeholder 0",
+          "type": "text",
+          "position": {
+            "x": 0.08,
+            "y": 5.32,
+            "width": 0.5,
+            "height": 0.25
+          },
+          "text": "7",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        }
+      ]
+    },
+    {
+      "slide_number": 8,
+      "elements": [
+        {
+          "id": "slide_8_shape_1",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.35,
+            "width": 8.65,
+            "height": 0.55
+          },
+          "text": "Key Risks & Mitigation",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_2",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.9,
+            "width": 8.65,
+            "height": 0.32
+          },
+          "text": "[Summary of top supply-side risks]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[Summary of top supply-side risks]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_8_shape_3",
+          "name": "Risk card 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 1.35,
+            "width": 4.25,
+            "height": 1.6
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_4",
+          "name": "Supply continuity circle",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 1.55,
+            "width": 0.5,
+            "height": 0.5
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_5",
+          "name": "Image 0",
+          "type": "image",
+          "position": {
+            "x": 1.175,
+            "y": 1.675,
+            "width": 0.25,
+            "height": 0.25
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_6",
+          "name": "Text 4",
+          "type": "text",
+          "position": {
+            "x": 1.7,
+            "y": 1.55,
+            "width": 2.2,
+            "height": 0.5
+          },
+          "text": "Supply continuity",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_7",
+          "name": "Risk level pill",
+          "type": "text",
+          "position": {
+            "x": 3.95,
+            "y": 1.65,
+            "width": 0.95,
+            "height": 0.3
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_8",
+          "name": "Text 6",
+          "type": "text",
+          "position": {
+            "x": 3.95,
+            "y": 1.65,
+            "width": 0.95,
+            "height": 0.3
+          },
+          "text": "[Level]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Level]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_8_shape_9",
+          "name": "Text 7",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 2.2,
+            "width": 3.85,
+            "height": 0.65
+          },
+          "text": "Risk: [Risk description]\nAction: [Mitigation action]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Risk description]",
+            "[Mitigation action]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_8_shape_10",
+          "name": "Risk card 2",
+          "type": "text",
+          "position": {
+            "x": 5.25,
+            "y": 1.35,
+            "width": 4.25,
+            "height": 1.6
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_11",
+          "name": "Price inflation circle",
+          "type": "text",
+          "position": {
+            "x": 5.45,
+            "y": 1.55,
+            "width": 0.5,
+            "height": 0.5
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_12",
+          "name": "Image 1",
+          "type": "image",
+          "position": {
+            "x": 5.575,
+            "y": 1.675,
+            "width": 0.25,
+            "height": 0.25
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_13",
+          "name": "Text 10",
+          "type": "text",
+          "position": {
+            "x": 6.1,
+            "y": 1.55,
+            "width": 2.2,
+            "height": 0.5
+          },
+          "text": "Price inflation",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_14",
+          "name": "Risk level pill",
+          "type": "text",
+          "position": {
+            "x": 8.35,
+            "y": 1.65,
+            "width": 0.95,
+            "height": 0.3
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_15",
+          "name": "Text 12",
+          "type": "text",
+          "position": {
+            "x": 8.35,
+            "y": 1.65,
+            "width": 0.95,
+            "height": 0.3
+          },
+          "text": "[Level]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Level]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_8_shape_16",
+          "name": "Text 13",
+          "type": "text",
+          "position": {
+            "x": 5.45,
+            "y": 2.2,
+            "width": 3.85,
+            "height": 0.65
+          },
+          "text": "Risk: [Risk description]\nAction: [Mitigation action]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Risk description]",
+            "[Mitigation action]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_8_shape_17",
+          "name": "Risk card 3",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 3.13,
+            "width": 4.25,
+            "height": 1.6
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_18",
+          "name": "Single-source dependency circle",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 3.33,
+            "width": 0.5,
+            "height": 0.5
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_19",
+          "name": "Image 2",
+          "type": "image",
+          "position": {
+            "x": 1.175,
+            "y": 3.455,
+            "width": 0.25,
+            "height": 0.25
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_20",
+          "name": "Text 16",
+          "type": "text",
+          "position": {
+            "x": 1.7,
+            "y": 3.33,
+            "width": 2.2,
+            "height": 0.5
+          },
+          "text": "Single-source dependency",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_21",
+          "name": "Risk level pill",
+          "type": "text",
+          "position": {
+            "x": 3.95,
+            "y": 3.43,
+            "width": 0.95,
+            "height": 0.3
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_22",
+          "name": "Text 18",
+          "type": "text",
+          "position": {
+            "x": 3.95,
+            "y": 3.43,
+            "width": 0.95,
+            "height": 0.3
+          },
+          "text": "[Level]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Level]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_8_shape_23",
+          "name": "Text 19",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 3.98,
+            "width": 3.85,
+            "height": 0.65
+          },
+          "text": "Risk: [Risk description]\nAction: [Mitigation action]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Risk description]",
+            "[Mitigation action]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_8_shape_24",
+          "name": "Risk card 4",
+          "type": "text",
+          "position": {
+            "x": 5.25,
+            "y": 3.13,
+            "width": 4.25,
+            "height": 1.6
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_25",
+          "name": "Compliance circle",
+          "type": "text",
+          "position": {
+            "x": 5.45,
+            "y": 3.33,
+            "width": 0.5,
+            "height": 0.5
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_26",
+          "name": "Image 3",
+          "type": "image",
+          "position": {
+            "x": 5.575,
+            "y": 3.455,
+            "width": 0.25,
+            "height": 0.25
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_27",
+          "name": "Text 22",
+          "type": "text",
+          "position": {
+            "x": 6.1,
+            "y": 3.33,
+            "width": 2.2,
+            "height": 0.5
+          },
+          "text": "Compliance",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_28",
+          "name": "Risk level pill",
+          "type": "text",
+          "position": {
+            "x": 8.35,
+            "y": 3.43,
+            "width": 0.95,
+            "height": 0.3
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_8_shape_29",
+          "name": "Text 24",
+          "type": "text",
+          "position": {
+            "x": 8.35,
+            "y": 3.43,
+            "width": 0.95,
+            "height": 0.3
+          },
+          "text": "[Level]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Level]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_8_shape_30",
+          "name": "Text 25",
+          "type": "text",
+          "position": {
+            "x": 5.45,
+            "y": 3.98,
+            "width": 3.85,
+            "height": 0.65
+          },
+          "text": "Risk: [Risk description]\nAction: [Mitigation action]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Risk description]",
+            "[Mitigation action]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_8_shape_31",
+          "name": "Slide Number Placeholder 0",
+          "type": "text",
+          "position": {
+            "x": 0.08,
+            "y": 5.32,
+            "width": 0.5,
+            "height": 0.25
+          },
+          "text": "8",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        }
+      ]
+    },
+    {
+      "slide_number": 9,
+      "elements": [
+        {
+          "id": "slide_9_shape_1",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.35,
+            "width": 8.65,
+            "height": 0.55
+          },
+          "text": "Decisions Required & Next Steps",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_9_shape_2",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 0.9,
+            "width": 8.65,
+            "height": 0.32
+          },
+          "text": "[Items requiring approval today]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[Items requiring approval today]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_9_shape_3",
+          "name": "Decisions panel",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 1.4,
+            "width": 3.7,
+            "height": 2.85
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_9_shape_4",
+          "name": "Text 3",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 1.55,
+            "width": 3.3,
+            "height": 0.35
+          },
+          "text": "For approval",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_9_shape_5",
+          "name": "Decision 1 marker",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 2.05,
+            "width": 0.45,
+            "height": 0.45
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_9_shape_6",
+          "name": "Text 5",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 2.05,
+            "width": 0.45,
+            "height": 0.45
+          },
+          "text": "1",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_9_shape_7",
+          "name": "Text 6",
+          "type": "text",
+          "position": {
+            "x": 1.65,
+            "y": 2.03,
+            "width": 2.75,
+            "height": 0.85
+          },
+          "text": "[Decision required – scope, value, term]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Decision required – scope, value, term]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_9_shape_8",
+          "name": "Decision 2 marker",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 3.05,
+            "width": 0.45,
+            "height": 0.45
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_9_shape_9",
+          "name": "Text 8",
+          "type": "text",
+          "position": {
+            "x": 1.05,
+            "y": 3.05,
+            "width": 0.45,
+            "height": 0.45
+          },
+          "text": "2",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_9_shape_10",
+          "name": "Text 9",
+          "type": "text",
+          "position": {
+            "x": 1.65,
+            "y": 3.03,
+            "width": 2.75,
+            "height": 0.85
+          },
+          "text": "[Decision required – scope, value, term]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Decision required – scope, value, term]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_9_shape_11",
+          "name": "Next steps table",
+          "type": "table",
+          "position": {
+            "x": 4.75,
+            "y": 1.4,
+            "width": 4.75,
+            "height": 1.0
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false,
+          "table": {
+            "rows": 5,
+            "columns": 3,
+            "cells": [
+              [
+                "Action",
+                "Owner",
+                "Due"
+              ],
+              [
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ],
+              [
+                "",
+                "",
+                ""
+              ]
+            ]
+          },
+          "requires_review": true,
+          "mapping_method": "structured_table_mapping"
+        },
+        {
+          "id": "slide_9_shape_12",
+          "name": "Slide Number Placeholder 0",
+          "type": "text",
+          "position": {
+            "x": 0.08,
+            "y": 5.32,
+            "width": 0.5,
+            "height": 0.25
+          },
+          "text": "9",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        }
+      ]
+    },
+    {
+      "slide_number": 10,
+      "elements": [
+        {
+          "id": "slide_10_shape_1",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 1.2,
+            "width": 5.6,
+            "height": 0.35
+          },
+          "text": "THANK YOU",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_10_shape_2",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 1.6,
+            "width": 5.6,
+            "height": 1.3
+          },
+          "text": "Questions & Discussion",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_10_shape_3",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 2.95,
+            "width": 5.6,
+            "height": 0.5
+          },
+          "text": "[Name]  ·  [email@company.com]  ·  [Ext. 0000]",
+          "is_placeholder": true,
+          "placeholder_tokens": [
+            "[Name]",
+            "[email@company.com]",
+            "[Ext. 0000]"
+          ],
+          "protected_candidate": false,
+          "mappable": true
+        },
+        {
+          "id": "slide_10_shape_4",
+          "name": "Text 1",
+          "type": "text",
+          "position": {
+            "x": 0.85,
+            "y": 4.3,
+            "width": 5.6,
+            "height": 0.4
+          },
+          "text": "Procurement Department",
+          "is_placeholder": true,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_10_shape_5",
+          "name": "Discussion icon circle",
+          "type": "text",
+          "position": {
+            "x": 7.15,
+            "y": 1.35,
+            "width": 1.7,
+            "height": 1.7
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_10_shape_6",
+          "name": "Image 0",
+          "type": "image",
+          "position": {
+            "x": 7.575,
+            "y": 1.775,
+            "width": 0.85,
+            "height": 0.85
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_10_shape_7",
+          "name": "Logo placeholder",
+          "type": "text",
+          "position": {
+            "x": 6.95,
+            "y": 3.6,
+            "width": 2.1,
+            "height": 0.9
+          },
+          "text": "",
+          "is_placeholder": false,
+          "placeholder_tokens": [],
+          "protected_candidate": false,
+          "mappable": false
+        },
+        {
+          "id": "slide_10_shape_8",
+          "name": "Text 6",
+          "type": "text",
+          "position": {
+            "x": 6.95,
+            "y": 3.6,
+            "width": 2.1,
+            "height": 0.9
+          },
+          "text": "[Company Logo]",
+          "is_placeholder": false,
+          "placeholder_tokens": [
+            "[Company Logo]"
+          ],
+          "protected_candidate": true,
+          "mappable": false
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "id": "slide_1_shape_1",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 1.2,
+        "width": 5.6,
+        "height": 0.35
+      },
+      "text": "PROCUREMENT DEPARTMENT",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_1_shape_2",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 1.6,
+        "width": 5.6,
+        "height": 1.3
+      },
+      "text": "[Presentation Title]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[Presentation Title]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_1_shape_3",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 2.95,
+        "width": 5.6,
+        "height": 0.5
+      },
+      "text": "[Period]  ·  [Subtitle / scope of review]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[Period]",
+        "[Subtitle / scope of review]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_1_shape_4",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 4.3,
+        "width": 5.6,
+        "height": 0.4
+      },
+      "text": "[Presenter Name], [Role]  ·  [DD Month YYYY]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[Presenter Name]",
+        "[Role]",
+        "[DD Month YYYY]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_1_shape_5",
+      "name": "Handshake icon circle",
+      "type": "text",
+      "position": {
+        "x": 7.15,
+        "y": 1.35,
+        "width": 1.7,
+        "height": 1.7
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_1_shape_6",
+      "name": "Image 0",
+      "type": "image",
+      "position": {
+        "x": 7.575,
+        "y": 1.775,
+        "width": 0.85,
+        "height": 0.85
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_1_shape_7",
+      "name": "Logo placeholder",
+      "type": "text",
+      "position": {
+        "x": 6.95,
+        "y": 3.6,
+        "width": 2.1,
+        "height": 0.9
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_1_shape_8",
+      "name": "Text 6",
+      "type": "text",
+      "position": {
+        "x": 6.95,
+        "y": 3.6,
+        "width": 2.1,
+        "height": 0.9
+      },
+      "text": "[Company Logo]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Company Logo]"
+      ],
+      "protected_candidate": true,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_1",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.35,
+        "width": 8.65,
+        "height": 0.55
+      },
+      "text": "Agenda",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_2",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.9,
+        "width": 8.65,
+        "height": 0.32
+      },
+      "text": "[What we will cover today]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[What we will cover today]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_2_shape_3",
+      "name": "Agenda item 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 1.45,
+        "width": 4.25,
+        "height": 0.92
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_4",
+      "name": "Text 3",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 1.45,
+        "width": 0.8,
+        "height": 0.92
+      },
+      "text": "01",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_5",
+      "name": "Text 4",
+      "type": "text",
+      "position": {
+        "x": 1.85,
+        "y": 1.45,
+        "width": 3.1,
+        "height": 0.92
+      },
+      "text": "Executive Summary\n[Short description]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Short description]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_2_shape_6",
+      "name": "Agenda item 2",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 2.57,
+        "width": 4.25,
+        "height": 0.92
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_7",
+      "name": "Text 6",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 2.57,
+        "width": 0.8,
+        "height": 0.92
+      },
+      "text": "02",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_8",
+      "name": "Text 7",
+      "type": "text",
+      "position": {
+        "x": 1.85,
+        "y": 2.57,
+        "width": 3.1,
+        "height": 0.92
+      },
+      "text": "Spend Overview\n[Short description]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Short description]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_2_shape_9",
+      "name": "Agenda item 3",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 3.69,
+        "width": 4.25,
+        "height": 0.92
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_10",
+      "name": "Text 9",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 3.69,
+        "width": 0.8,
+        "height": 0.92
+      },
+      "text": "03",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_11",
+      "name": "Text 10",
+      "type": "text",
+      "position": {
+        "x": 1.85,
+        "y": 3.69,
+        "width": 3.1,
+        "height": 0.92
+      },
+      "text": "Savings & KPIs\n[Short description]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Short description]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_2_shape_12",
+      "name": "Agenda item 4",
+      "type": "text",
+      "position": {
+        "x": 5.25,
+        "y": 1.45,
+        "width": 4.25,
+        "height": 0.92
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_13",
+      "name": "Text 12",
+      "type": "text",
+      "position": {
+        "x": 5.45,
+        "y": 1.45,
+        "width": 0.8,
+        "height": 0.92
+      },
+      "text": "04",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_14",
+      "name": "Text 13",
+      "type": "text",
+      "position": {
+        "x": 6.25,
+        "y": 1.45,
+        "width": 3.1,
+        "height": 0.92
+      },
+      "text": "Supplier Performance\n[Short description]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Short description]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_2_shape_15",
+      "name": "Agenda item 5",
+      "type": "text",
+      "position": {
+        "x": 5.25,
+        "y": 2.57,
+        "width": 4.25,
+        "height": 0.92
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_16",
+      "name": "Text 15",
+      "type": "text",
+      "position": {
+        "x": 5.45,
+        "y": 2.57,
+        "width": 0.8,
+        "height": 0.92
+      },
+      "text": "05",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_17",
+      "name": "Text 16",
+      "type": "text",
+      "position": {
+        "x": 6.25,
+        "y": 2.57,
+        "width": 3.1,
+        "height": 0.92
+      },
+      "text": "Sourcing Pipeline\n[Short description]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Short description]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_2_shape_18",
+      "name": "Agenda item 6",
+      "type": "text",
+      "position": {
+        "x": 5.25,
+        "y": 3.69,
+        "width": 4.25,
+        "height": 0.92
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_19",
+      "name": "Text 18",
+      "type": "text",
+      "position": {
+        "x": 5.45,
+        "y": 3.69,
+        "width": 0.8,
+        "height": 0.92
+      },
+      "text": "06",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_2_shape_20",
+      "name": "Text 19",
+      "type": "text",
+      "position": {
+        "x": 6.25,
+        "y": 3.69,
+        "width": 3.1,
+        "height": 0.92
+      },
+      "text": "Risks & Decisions\n[Short description]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Short description]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_2_shape_21",
+      "name": "Slide Number Placeholder 0",
+      "type": "text",
+      "position": {
+        "x": 0.08,
+        "y": 5.32,
+        "width": 0.5,
+        "height": 0.25
+      },
+      "text": "2",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_1",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.35,
+        "width": 8.65,
+        "height": 0.55
+      },
+      "text": "Executive Summary",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_2",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.9,
+        "width": 8.65,
+        "height": 0.32
+      },
+      "text": "[Headline message for the period]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[Headline message for the period]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_3_shape_3",
+      "name": "KPI card 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 1.4,
+        "width": 2.05,
+        "height": 1.75
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_4",
+      "name": "[Total spend] circle",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 1.57,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_5",
+      "name": "Image 0",
+      "type": "image",
+      "position": {
+        "x": 1.175,
+        "y": 1.695,
+        "width": 0.25,
+        "height": 0.25
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_6",
+      "name": "Text 4",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 2.15,
+        "width": 1.7,
+        "height": 0.55
+      },
+      "text": "[Value]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Value]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_3_shape_7",
+      "name": "Text 5",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 2.7,
+        "width": 1.75,
+        "height": 0.35
+      },
+      "text": "[Total spend]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Total spend]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_3_shape_8",
+      "name": "KPI card 2",
+      "type": "text",
+      "position": {
+        "x": 3.05,
+        "y": 1.4,
+        "width": 2.05,
+        "height": 1.75
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_9",
+      "name": "[Savings delivered] circle",
+      "type": "text",
+      "position": {
+        "x": 3.25,
+        "y": 1.57,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_10",
+      "name": "Image 1",
+      "type": "image",
+      "position": {
+        "x": 3.375,
+        "y": 1.695,
+        "width": 0.25,
+        "height": 0.25
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_11",
+      "name": "Text 8",
+      "type": "text",
+      "position": {
+        "x": 3.25,
+        "y": 2.15,
+        "width": 1.7,
+        "height": 0.55
+      },
+      "text": "[Value]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Value]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_3_shape_12",
+      "name": "Text 9",
+      "type": "text",
+      "position": {
+        "x": 3.25,
+        "y": 2.7,
+        "width": 1.75,
+        "height": 0.35
+      },
+      "text": "[Savings delivered]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Savings delivered]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_3_shape_13",
+      "name": "KPI card 3",
+      "type": "text",
+      "position": {
+        "x": 5.25,
+        "y": 1.4,
+        "width": 2.05,
+        "height": 1.75
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_14",
+      "name": "[Spend under contract] circle",
+      "type": "text",
+      "position": {
+        "x": 5.45,
+        "y": 1.57,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_15",
+      "name": "Image 2",
+      "type": "image",
+      "position": {
+        "x": 5.575,
+        "y": 1.695,
+        "width": 0.25,
+        "height": 0.25
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_16",
+      "name": "Text 12",
+      "type": "text",
+      "position": {
+        "x": 5.45,
+        "y": 2.15,
+        "width": 1.7,
+        "height": 0.55
+      },
+      "text": "[Value]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Value]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_3_shape_17",
+      "name": "Text 13",
+      "type": "text",
+      "position": {
+        "x": 5.45,
+        "y": 2.7,
+        "width": 1.75,
+        "height": 0.35
+      },
+      "text": "[Spend under contract]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Spend under contract]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_3_shape_18",
+      "name": "KPI card 4",
+      "type": "text",
+      "position": {
+        "x": 7.45,
+        "y": 1.4,
+        "width": 2.05,
+        "height": 1.75
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_19",
+      "name": "[PR-to-PO cycle time] circle",
+      "type": "text",
+      "position": {
+        "x": 7.65,
+        "y": 1.57,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_20",
+      "name": "Image 3",
+      "type": "image",
+      "position": {
+        "x": 7.775,
+        "y": 1.695,
+        "width": 0.25,
+        "height": 0.25
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_21",
+      "name": "Text 16",
+      "type": "text",
+      "position": {
+        "x": 7.65,
+        "y": 2.15,
+        "width": 1.7,
+        "height": 0.55
+      },
+      "text": "[Value]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Value]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_3_shape_22",
+      "name": "Text 17",
+      "type": "text",
+      "position": {
+        "x": 7.65,
+        "y": 2.7,
+        "width": 1.75,
+        "height": 0.35
+      },
+      "text": "[PR-to-PO cycle time]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[PR-to-PO cycle time]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_3_shape_23",
+      "name": "Text 18",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 3.35,
+        "width": 8.65,
+        "height": 0.35
+      },
+      "text": "Key messages",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_3_shape_24",
+      "name": "Text 19",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 3.7,
+        "width": 8.65,
+        "height": 1.15
+      },
+      "text": "[Key message 1]\n[Key message 2]\n[Key message 3]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Key message 1]",
+        "[Key message 2]",
+        "[Key message 3]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_3_shape_25",
+      "name": "Slide Number Placeholder 0",
+      "type": "text",
+      "position": {
+        "x": 0.08,
+        "y": 5.32,
+        "width": 0.5,
+        "height": 0.25
+      },
+      "text": "3",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_4_shape_1",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.35,
+        "width": 8.65,
+        "height": 0.55
+      },
+      "text": "Spend Overview",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_4_shape_2",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.9,
+        "width": 8.65,
+        "height": 0.32
+      },
+      "text": "[Key message on spend distribution]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[Key message on spend distribution]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_4_shape_3",
+      "name": "Spend by category chart",
+      "type": "chart",
+      "position": {
+        "x": 0.85,
+        "y": 1.35,
+        "width": 5.3,
+        "height": 3.5
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false,
+      "chart": {
+        "chart_type": "BAR_CLUSTERED (57)",
+        "series": [
+          {
+            "name": "Spend",
+            "values": [
+              6.0,
+              5.0,
+              4.0,
+              3.0,
+              2.0,
+              1.0
+            ]
+          }
+        ]
+      },
+      "requires_review": true,
+      "mapping_method": "structured_chart_mapping"
+    },
+    {
+      "id": "slide_4_shape_4",
+      "name": "Commentary panel",
+      "type": "text",
+      "position": {
+        "x": 6.4,
+        "y": 1.35,
+        "width": 3.1,
+        "height": 3.5
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_4_shape_5",
+      "name": "Text 3",
+      "type": "text",
+      "position": {
+        "x": 6.6,
+        "y": 1.5,
+        "width": 2.7,
+        "height": 0.35
+      },
+      "text": "Commentary",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_4_shape_6",
+      "name": "Text 4",
+      "type": "text",
+      "position": {
+        "x": 6.6,
+        "y": 1.9,
+        "width": 2.75,
+        "height": 2.8
+      },
+      "text": "[Insight 1]\n[Insight 2]\n[Insight 3]\n[Opportunity]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Insight 1]",
+        "[Insight 2]",
+        "[Insight 3]",
+        "[Opportunity]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_4_shape_7",
+      "name": "Slide Number Placeholder 0",
+      "type": "text",
+      "position": {
+        "x": 0.08,
+        "y": 5.32,
+        "width": 0.5,
+        "height": 0.25
+      },
+      "text": "4",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_5_shape_1",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.35,
+        "width": 8.65,
+        "height": 0.55
+      },
+      "text": "Savings & KPIs",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_5_shape_2",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.9,
+        "width": 8.65,
+        "height": 0.32
+      },
+      "text": "[Summary of KPI performance vs target]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[Summary of KPI performance vs target]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_5_shape_3",
+      "name": "KPI table",
+      "type": "table",
+      "position": {
+        "x": 0.85,
+        "y": 1.4,
+        "width": 8.65,
+        "height": 1.0
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false,
+      "table": {
+        "rows": 7,
+        "columns": 4,
+        "cells": [
+          [
+            "KPI",
+            "Target",
+            "Actual",
+            "Status"
+          ],
+          [
+            "Cost savings (YTD)",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Spend under contract",
+            "",
+            "",
+            ""
+          ],
+          [
+            "PR-to-PO cycle time",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Supplier on-time delivery",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Maverick / off-PO spend",
+            "",
+            "",
+            ""
+          ],
+          [
+            "Invoice first-pass match",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "requires_review": true,
+      "mapping_method": "structured_table_mapping"
+    },
+    {
+      "id": "slide_5_shape_4",
+      "name": "Text 2",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 4.55,
+        "width": 8.65,
+        "height": 0.3
+      },
+      "text": "Status key:  On track ≥ target   ·   At risk within 5%   ·   Off track > 5% from target",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_5_shape_5",
+      "name": "Slide Number Placeholder 0",
+      "type": "text",
+      "position": {
+        "x": 0.08,
+        "y": 5.32,
+        "width": 0.5,
+        "height": 0.25
+      },
+      "text": "5",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_6_shape_1",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.35,
+        "width": 8.65,
+        "height": 0.55
+      },
+      "text": "Supplier Performance",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_6_shape_2",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.9,
+        "width": 8.65,
+        "height": 0.32
+      },
+      "text": "[Strategic supplier scorecard – period]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[Strategic supplier scorecard – period]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_6_shape_3",
+      "name": "Supplier scorecard table",
+      "type": "table",
+      "position": {
+        "x": 0.85,
+        "y": 1.4,
+        "width": 8.65,
+        "height": 1.0
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false,
+      "table": {
+        "rows": 6,
+        "columns": 6,
+        "cells": [
+          [
+            "Supplier",
+            "Category",
+            "Spend",
+            "Quality",
+            "On-time",
+            "Rating"
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            "",
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "requires_review": true,
+      "mapping_method": "structured_table_mapping"
+    },
+    {
+      "id": "slide_6_shape_4",
+      "name": "Text 2",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 4.4,
+        "width": 8.65,
+        "height": 0.4
+      },
+      "text": "[Scoring method / thresholds]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Scoring method / thresholds]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_6_shape_5",
+      "name": "Slide Number Placeholder 0",
+      "type": "text",
+      "position": {
+        "x": 0.08,
+        "y": 5.32,
+        "width": 0.5,
+        "height": 0.25
+      },
+      "text": "6",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_1",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.35,
+        "width": 8.65,
+        "height": 0.55
+      },
+      "text": "Sourcing Pipeline",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_2",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.9,
+        "width": 8.65,
+        "height": 0.32
+      },
+      "text": "[No. of active sourcing events and total value]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[No. of active sourcing events and total value]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_3",
+      "name": "Stage Requirement",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 1.4,
+        "width": 1.5,
+        "height": 1.0
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_4",
+      "name": "Text 3",
+      "type": "text",
+      "position": {
+        "x": 0.93,
+        "y": 1.4,
+        "width": 1.12,
+        "height": 1.0
+      },
+      "text": "[#]\nRequirement",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[#]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_5",
+      "name": "Stage RFx",
+      "type": "text",
+      "position": {
+        "x": 2.29,
+        "y": 1.4,
+        "width": 1.5,
+        "height": 1.0
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_6",
+      "name": "Text 5",
+      "type": "text",
+      "position": {
+        "x": 2.57,
+        "y": 1.4,
+        "width": 1.12,
+        "height": 1.0
+      },
+      "text": "[#]\nRFx",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[#]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_7",
+      "name": "Stage Evaluation",
+      "type": "text",
+      "position": {
+        "x": 3.73,
+        "y": 1.4,
+        "width": 1.5,
+        "height": 1.0
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_8",
+      "name": "Text 7",
+      "type": "text",
+      "position": {
+        "x": 4.01,
+        "y": 1.4,
+        "width": 1.12,
+        "height": 1.0
+      },
+      "text": "[#]\nEvaluation",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[#]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_9",
+      "name": "Stage Negotiation",
+      "type": "text",
+      "position": {
+        "x": 5.17,
+        "y": 1.4,
+        "width": 1.5,
+        "height": 1.0
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_10",
+      "name": "Text 9",
+      "type": "text",
+      "position": {
+        "x": 5.45,
+        "y": 1.4,
+        "width": 1.12,
+        "height": 1.0
+      },
+      "text": "[#]\nNegotiation",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[#]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_11",
+      "name": "Stage Award",
+      "type": "text",
+      "position": {
+        "x": 6.61,
+        "y": 1.4,
+        "width": 1.5,
+        "height": 1.0
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_12",
+      "name": "Text 11",
+      "type": "text",
+      "position": {
+        "x": 6.89,
+        "y": 1.4,
+        "width": 1.12,
+        "height": 1.0
+      },
+      "text": "[#]\nAward",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[#]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_13",
+      "name": "Stage Contract",
+      "type": "text",
+      "position": {
+        "x": 8.05,
+        "y": 1.4,
+        "width": 1.5,
+        "height": 1.0
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_14",
+      "name": "Text 13",
+      "type": "text",
+      "position": {
+        "x": 8.33,
+        "y": 1.4,
+        "width": 1.12,
+        "height": 1.0
+      },
+      "text": "[#]\nContract",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[#]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_15",
+      "name": "Text 14",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 2.65,
+        "width": 8.65,
+        "height": 0.35
+      },
+      "text": "Upcoming awards (next 90 days)",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_16",
+      "name": "Award 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 3.1,
+        "width": 2.75,
+        "height": 1.7
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_17",
+      "name": "Text 16",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 3.22,
+        "width": 2.35,
+        "height": 0.55
+      },
+      "text": "[Contract / category name]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Contract / category name]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_18",
+      "name": "Text 17",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 3.8,
+        "width": 2.35,
+        "height": 0.45
+      },
+      "text": "[Value]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Value]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_19",
+      "name": "Text 18",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 4.3,
+        "width": 2.35,
+        "height": 0.3
+      },
+      "text": "Target award: [Month YYYY]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Month YYYY]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_20",
+      "name": "Award 2",
+      "type": "text",
+      "position": {
+        "x": 3.8,
+        "y": 3.1,
+        "width": 2.75,
+        "height": 1.7
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_21",
+      "name": "Text 20",
+      "type": "text",
+      "position": {
+        "x": 4.0,
+        "y": 3.22,
+        "width": 2.35,
+        "height": 0.55
+      },
+      "text": "[Contract / category name]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Contract / category name]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_22",
+      "name": "Text 21",
+      "type": "text",
+      "position": {
+        "x": 4.0,
+        "y": 3.8,
+        "width": 2.35,
+        "height": 0.45
+      },
+      "text": "[Value]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Value]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_23",
+      "name": "Text 22",
+      "type": "text",
+      "position": {
+        "x": 4.0,
+        "y": 4.3,
+        "width": 2.35,
+        "height": 0.3
+      },
+      "text": "Target award: [Month YYYY]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Month YYYY]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_24",
+      "name": "Award 3",
+      "type": "text",
+      "position": {
+        "x": 6.75,
+        "y": 3.1,
+        "width": 2.75,
+        "height": 1.7
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_7_shape_25",
+      "name": "Text 24",
+      "type": "text",
+      "position": {
+        "x": 6.95,
+        "y": 3.22,
+        "width": 2.35,
+        "height": 0.55
+      },
+      "text": "[Contract / category name]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Contract / category name]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_26",
+      "name": "Text 25",
+      "type": "text",
+      "position": {
+        "x": 6.95,
+        "y": 3.8,
+        "width": 2.35,
+        "height": 0.45
+      },
+      "text": "[Value]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Value]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_27",
+      "name": "Text 26",
+      "type": "text",
+      "position": {
+        "x": 6.95,
+        "y": 4.3,
+        "width": 2.35,
+        "height": 0.3
+      },
+      "text": "Target award: [Month YYYY]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Month YYYY]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_7_shape_28",
+      "name": "Slide Number Placeholder 0",
+      "type": "text",
+      "position": {
+        "x": 0.08,
+        "y": 5.32,
+        "width": 0.5,
+        "height": 0.25
+      },
+      "text": "7",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_1",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.35,
+        "width": 8.65,
+        "height": 0.55
+      },
+      "text": "Key Risks & Mitigation",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_2",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.9,
+        "width": 8.65,
+        "height": 0.32
+      },
+      "text": "[Summary of top supply-side risks]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[Summary of top supply-side risks]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_8_shape_3",
+      "name": "Risk card 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 1.35,
+        "width": 4.25,
+        "height": 1.6
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_4",
+      "name": "Supply continuity circle",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 1.55,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_5",
+      "name": "Image 0",
+      "type": "image",
+      "position": {
+        "x": 1.175,
+        "y": 1.675,
+        "width": 0.25,
+        "height": 0.25
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_6",
+      "name": "Text 4",
+      "type": "text",
+      "position": {
+        "x": 1.7,
+        "y": 1.55,
+        "width": 2.2,
+        "height": 0.5
+      },
+      "text": "Supply continuity",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_7",
+      "name": "Risk level pill",
+      "type": "text",
+      "position": {
+        "x": 3.95,
+        "y": 1.65,
+        "width": 0.95,
+        "height": 0.3
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_8",
+      "name": "Text 6",
+      "type": "text",
+      "position": {
+        "x": 3.95,
+        "y": 1.65,
+        "width": 0.95,
+        "height": 0.3
+      },
+      "text": "[Level]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Level]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_8_shape_9",
+      "name": "Text 7",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 2.2,
+        "width": 3.85,
+        "height": 0.65
+      },
+      "text": "Risk: [Risk description]\nAction: [Mitigation action]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Risk description]",
+        "[Mitigation action]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_8_shape_10",
+      "name": "Risk card 2",
+      "type": "text",
+      "position": {
+        "x": 5.25,
+        "y": 1.35,
+        "width": 4.25,
+        "height": 1.6
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_11",
+      "name": "Price inflation circle",
+      "type": "text",
+      "position": {
+        "x": 5.45,
+        "y": 1.55,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_12",
+      "name": "Image 1",
+      "type": "image",
+      "position": {
+        "x": 5.575,
+        "y": 1.675,
+        "width": 0.25,
+        "height": 0.25
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_13",
+      "name": "Text 10",
+      "type": "text",
+      "position": {
+        "x": 6.1,
+        "y": 1.55,
+        "width": 2.2,
+        "height": 0.5
+      },
+      "text": "Price inflation",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_14",
+      "name": "Risk level pill",
+      "type": "text",
+      "position": {
+        "x": 8.35,
+        "y": 1.65,
+        "width": 0.95,
+        "height": 0.3
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_15",
+      "name": "Text 12",
+      "type": "text",
+      "position": {
+        "x": 8.35,
+        "y": 1.65,
+        "width": 0.95,
+        "height": 0.3
+      },
+      "text": "[Level]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Level]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_8_shape_16",
+      "name": "Text 13",
+      "type": "text",
+      "position": {
+        "x": 5.45,
+        "y": 2.2,
+        "width": 3.85,
+        "height": 0.65
+      },
+      "text": "Risk: [Risk description]\nAction: [Mitigation action]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Risk description]",
+        "[Mitigation action]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_8_shape_17",
+      "name": "Risk card 3",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 3.13,
+        "width": 4.25,
+        "height": 1.6
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_18",
+      "name": "Single-source dependency circle",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 3.33,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_19",
+      "name": "Image 2",
+      "type": "image",
+      "position": {
+        "x": 1.175,
+        "y": 3.455,
+        "width": 0.25,
+        "height": 0.25
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_20",
+      "name": "Text 16",
+      "type": "text",
+      "position": {
+        "x": 1.7,
+        "y": 3.33,
+        "width": 2.2,
+        "height": 0.5
+      },
+      "text": "Single-source dependency",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_21",
+      "name": "Risk level pill",
+      "type": "text",
+      "position": {
+        "x": 3.95,
+        "y": 3.43,
+        "width": 0.95,
+        "height": 0.3
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_22",
+      "name": "Text 18",
+      "type": "text",
+      "position": {
+        "x": 3.95,
+        "y": 3.43,
+        "width": 0.95,
+        "height": 0.3
+      },
+      "text": "[Level]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Level]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_8_shape_23",
+      "name": "Text 19",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 3.98,
+        "width": 3.85,
+        "height": 0.65
+      },
+      "text": "Risk: [Risk description]\nAction: [Mitigation action]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Risk description]",
+        "[Mitigation action]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_8_shape_24",
+      "name": "Risk card 4",
+      "type": "text",
+      "position": {
+        "x": 5.25,
+        "y": 3.13,
+        "width": 4.25,
+        "height": 1.6
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_25",
+      "name": "Compliance circle",
+      "type": "text",
+      "position": {
+        "x": 5.45,
+        "y": 3.33,
+        "width": 0.5,
+        "height": 0.5
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_26",
+      "name": "Image 3",
+      "type": "image",
+      "position": {
+        "x": 5.575,
+        "y": 3.455,
+        "width": 0.25,
+        "height": 0.25
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_27",
+      "name": "Text 22",
+      "type": "text",
+      "position": {
+        "x": 6.1,
+        "y": 3.33,
+        "width": 2.2,
+        "height": 0.5
+      },
+      "text": "Compliance",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_28",
+      "name": "Risk level pill",
+      "type": "text",
+      "position": {
+        "x": 8.35,
+        "y": 3.43,
+        "width": 0.95,
+        "height": 0.3
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_8_shape_29",
+      "name": "Text 24",
+      "type": "text",
+      "position": {
+        "x": 8.35,
+        "y": 3.43,
+        "width": 0.95,
+        "height": 0.3
+      },
+      "text": "[Level]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Level]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_8_shape_30",
+      "name": "Text 25",
+      "type": "text",
+      "position": {
+        "x": 5.45,
+        "y": 3.98,
+        "width": 3.85,
+        "height": 0.65
+      },
+      "text": "Risk: [Risk description]\nAction: [Mitigation action]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Risk description]",
+        "[Mitigation action]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_8_shape_31",
+      "name": "Slide Number Placeholder 0",
+      "type": "text",
+      "position": {
+        "x": 0.08,
+        "y": 5.32,
+        "width": 0.5,
+        "height": 0.25
+      },
+      "text": "8",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_9_shape_1",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.35,
+        "width": 8.65,
+        "height": 0.55
+      },
+      "text": "Decisions Required & Next Steps",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_9_shape_2",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 0.9,
+        "width": 8.65,
+        "height": 0.32
+      },
+      "text": "[Items requiring approval today]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[Items requiring approval today]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_9_shape_3",
+      "name": "Decisions panel",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 1.4,
+        "width": 3.7,
+        "height": 2.85
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_9_shape_4",
+      "name": "Text 3",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 1.55,
+        "width": 3.3,
+        "height": 0.35
+      },
+      "text": "For approval",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_9_shape_5",
+      "name": "Decision 1 marker",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 2.05,
+        "width": 0.45,
+        "height": 0.45
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_9_shape_6",
+      "name": "Text 5",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 2.05,
+        "width": 0.45,
+        "height": 0.45
+      },
+      "text": "1",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_9_shape_7",
+      "name": "Text 6",
+      "type": "text",
+      "position": {
+        "x": 1.65,
+        "y": 2.03,
+        "width": 2.75,
+        "height": 0.85
+      },
+      "text": "[Decision required – scope, value, term]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Decision required – scope, value, term]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_9_shape_8",
+      "name": "Decision 2 marker",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 3.05,
+        "width": 0.45,
+        "height": 0.45
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_9_shape_9",
+      "name": "Text 8",
+      "type": "text",
+      "position": {
+        "x": 1.05,
+        "y": 3.05,
+        "width": 0.45,
+        "height": 0.45
+      },
+      "text": "2",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_9_shape_10",
+      "name": "Text 9",
+      "type": "text",
+      "position": {
+        "x": 1.65,
+        "y": 3.03,
+        "width": 2.75,
+        "height": 0.85
+      },
+      "text": "[Decision required – scope, value, term]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Decision required – scope, value, term]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_9_shape_11",
+      "name": "Next steps table",
+      "type": "table",
+      "position": {
+        "x": 4.75,
+        "y": 1.4,
+        "width": 4.75,
+        "height": 1.0
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false,
+      "table": {
+        "rows": 5,
+        "columns": 3,
+        "cells": [
+          [
+            "Action",
+            "Owner",
+            "Due"
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ],
+          [
+            "",
+            "",
+            ""
+          ]
+        ]
+      },
+      "requires_review": true,
+      "mapping_method": "structured_table_mapping"
+    },
+    {
+      "id": "slide_9_shape_12",
+      "name": "Slide Number Placeholder 0",
+      "type": "text",
+      "position": {
+        "x": 0.08,
+        "y": 5.32,
+        "width": 0.5,
+        "height": 0.25
+      },
+      "text": "9",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_10_shape_1",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 1.2,
+        "width": 5.6,
+        "height": 0.35
+      },
+      "text": "THANK YOU",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_10_shape_2",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 1.6,
+        "width": 5.6,
+        "height": 1.3
+      },
+      "text": "Questions & Discussion",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_10_shape_3",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 2.95,
+        "width": 5.6,
+        "height": 0.5
+      },
+      "text": "[Name]  ·  [email@company.com]  ·  [Ext. 0000]",
+      "is_placeholder": true,
+      "placeholder_tokens": [
+        "[Name]",
+        "[email@company.com]",
+        "[Ext. 0000]"
+      ],
+      "protected_candidate": false,
+      "mappable": true
+    },
+    {
+      "id": "slide_10_shape_4",
+      "name": "Text 1",
+      "type": "text",
+      "position": {
+        "x": 0.85,
+        "y": 4.3,
+        "width": 5.6,
+        "height": 0.4
+      },
+      "text": "Procurement Department",
+      "is_placeholder": true,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_10_shape_5",
+      "name": "Discussion icon circle",
+      "type": "text",
+      "position": {
+        "x": 7.15,
+        "y": 1.35,
+        "width": 1.7,
+        "height": 1.7
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_10_shape_6",
+      "name": "Image 0",
+      "type": "image",
+      "position": {
+        "x": 7.575,
+        "y": 1.775,
+        "width": 0.85,
+        "height": 0.85
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_10_shape_7",
+      "name": "Logo placeholder",
+      "type": "text",
+      "position": {
+        "x": 6.95,
+        "y": 3.6,
+        "width": 2.1,
+        "height": 0.9
+      },
+      "text": "",
+      "is_placeholder": false,
+      "placeholder_tokens": [],
+      "protected_candidate": false,
+      "mappable": false
+    },
+    {
+      "id": "slide_10_shape_8",
+      "name": "Text 6",
+      "type": "text",
+      "position": {
+        "x": 6.95,
+        "y": 3.6,
+        "width": 2.1,
+        "height": 0.9
+      },
+      "text": "[Company Logo]",
+      "is_placeholder": false,
+      "placeholder_tokens": [
+        "[Company Logo]"
+      ],
+      "protected_candidate": true,
+      "mappable": false
+    }
+  ]
+}

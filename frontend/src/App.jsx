@@ -1,119 +1,280 @@
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
 import "./App.css";
 
 const API_URL = "http://localhost:8000";
 
-function MarkdownCode({ className, children, ...props }) {
-  const [copied, setCopied] = useState(false);
-  const isBlock = Boolean(className);
-  const code = String(children).replace(/\n$/, "");
-
-  async function copyCode() {
-    try {
-      await navigator.clipboard.writeText(code);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1500);
-    } catch {
-      console.error("Could not copy code.");
-    }
-  }
-
-  if (!isBlock) {
-    return <code {...props}>{children}</code>;
-  }
-
-  return (
-    <div className="code-block">
-      <div className="code-toolbar">
-        <span>{className.replace("language-", "") || "Code"}</span>
-        <button onClick={copyCode} className="copy-code">
-          {copied ? "Copied!" : "Copy code"}
-        </button>
-      </div>
-      <pre>
-        <code className={className} {...props}>
-          {children}
-        </code>
-      </pre>
-    </div>
+function isPresentationRequest(message) {
+  return /\b(powerpoint|power point|pptx|ppt|presentation|presentations|slides|slide deck|slide presentation)\b/i.test(
+    message
   );
 }
 
 function App() {
   const [models, setModels] = useState([]);
-  const [selectedModel, setSelectedModel] = useState("");
+  const [model, setModel] = useState("");
   const [prompt, setPrompt] = useState("");
+  const [file, setFile] = useState(null);
   const [response, setResponse] = useState("");
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [copied, setCopied] = useState(false);
   const [connection, setConnection] = useState("checking");
+  const [lastMessage, setLastMessage] = useState("");
+  const [lastFile, setLastFile] = useState(null);
+
+  const [templates, setTemplates] = useState([]);
+  const [templateName, setTemplateName] = useState("");
+  const [templatesError, setTemplatesError] = useState("");
+
+  const [jobProgress, setJobProgress] = useState(0);
+  const [jobStage, setJobStage] = useState("");
+  const [downloadUrl, setDownloadUrl] = useState("");
+
+  const fileInput = useRef(null);
+  const bottomRef = useRef(null);
+
+  const presentationMode =
+    Boolean(file) && isPresentationRequest(prompt);
 
   useEffect(() => {
     loadModels();
+    loadTemplates();
   }, []);
 
+  useEffect(() => {
+    bottomRef.current?.scrollIntoView({ behavior: "smooth" });
+  }, [response, loading, jobStage]);
+
   async function loadModels() {
-    setConnection("checking");
-    setError("");
-
     try {
-      const result = await fetch(`${API_URL}/api/models`);
+      const res = await fetch(`${API_URL}/api/models`);
 
-      if (!result.ok) {
-        throw new Error("Could not retrieve Ollama models.");
-      }
+      if (!res.ok) throw new Error("Could not load models.");
 
-      const data = await result.json();
-      setModels(data.models || []);
+      const data = await res.json();
+      const available = data.models || [];
 
-      setSelectedModel((current) =>
-        data.models.includes(current)
-          ? current
-          : data.models[0] || ""
+      setModels(available);
+
+      setModel((current) =>
+        available.includes(current) ? current : available[0] || ""
       );
 
-      setConnection(data.models.length ? "connected" : "empty");
-
-      if (!data.models.length) {
-        setError("No models found. Install an Ollama model first.");
-      }
-    } catch (err) {
+      setConnection("connected");
+    } catch {
       setConnection("offline");
-      setError(err.message);
     }
   }
 
-  async function generateResponse() {
-    if (!prompt.trim() || !selectedModel || loading) return;
+  async function loadTemplates() {
+    try {
+      setTemplatesError("");
+
+      const res = await fetch(`${API_URL}/presentations/templates`);
+
+      if (!res.ok) {
+        throw new Error("Could not load PowerPoint templates.");
+      }
+
+      const data = await res.json();
+      const available = data.templates || [];
+
+      setTemplates(available);
+
+      setTemplateName((current) =>
+        available.includes(current) ? current : available[0] || ""
+      );
+    } catch (err) {
+      setTemplatesError(err.message);
+    }
+  }
+
+  function attachFile(selected) {
+    if (!selected) return;
+
+    const extension = selected.name.split(".").pop().toLowerCase();
+
+    if (!["pdf", "docx", "txt"].includes(extension)) {
+      setError("Please upload a PDF, DOCX or TXT file.");
+      return;
+    }
+
+    if (selected.size > 50 * 1024 * 1024) {
+      setError("The maximum upload size is 50 MB.");
+      return;
+    }
+
+    setFile(selected);
+    setError("");
+    setResponse("");
+    setDownloadUrl("");
+  }
+
+  function clearAttachment() {
+    setFile(null);
+
+    if (fileInput.current) {
+      fileInput.current.value = "";
+    }
+  }
+
+  async function pollPresentationJob(jobId) {
+    while (true) {
+      const res = await fetch(
+        `${API_URL}/presentations/jobs/${jobId}`
+      );
+
+      const job = await res.json();
+
+      if (!res.ok) {
+        throw new Error(job.detail || "Could not check presentation status.");
+      }
+
+      setJobProgress(job.progress || 0);
+      setJobStage(job.stage || "Processing presentation");
+
+      if (job.status === "completed") {
+        setDownloadUrl(
+          `${API_URL}/presentations/jobs/${jobId}/download`
+        );
+
+        const result = job.result || {};
+
+        setResponse(
+          [
+            "## Your PowerPoint is ready!",
+            "",
+            `**File:** ${result.output_filename || "Generated presentation.pptx"}`,
+            "",
+            `**Slides processed:** ${result.slides_processed?.length ?? "N/A"}`,
+            `**Accepted mappings:** ${result.accepted_mapping_count ?? 0}`,
+            `**Rejected mappings:** ${result.rejected_mapping_count ?? 0}`,
+            "",
+            "Your generated presentation is ready to download below.",
+          ].join("\n")
+        );
+
+        setJobProgress(100);
+        setJobStage("Presentation generated successfully");
+
+        return;
+      }
+
+      if (job.status === "failed") {
+        throw new Error(
+          job.error || "Presentation generation failed."
+        );
+      }
+
+      await new Promise((resolve) => setTimeout(resolve, 2000));
+    }
+  }
+
+  async function generatePresentation() {
+    if (!file) {
+      throw new Error("Please attach a source document.");
+    }
+
+    if (!templateName) {
+      throw new Error("Please select a PowerPoint template.");
+    }
+
+    if (!model) {
+      throw new Error("Please select an Ollama model.");
+    }
+
+    setJobProgress(0);
+    setJobStage("Uploading your document");
+
+    const formData = new FormData();
+
+    formData.append("file", file);
+    formData.append("template_name", templateName);
+    formData.append("model", model);
+
+    const res = await fetch(`${API_URL}/presentations/jobs`, {
+      method: "POST",
+      body: formData,
+    });
+
+    const data = await res.json();
+
+    if (!res.ok) {
+      throw new Error(
+        data.detail || "Could not start presentation generation."
+      );
+    }
+
+    setJobStage("Presentation job created");
+    setJobProgress(2);
+
+    await pollPresentationJob(data.job_id);
+  }
+
+  async function submitMessage() {
+    if ((!prompt.trim() && !file) || loading || !model) return;
+
+    const submittedPrompt = prompt.trim();
+    const submittedFile = file;
+    const shouldGeneratePresentation =
+      Boolean(submittedFile) &&
+      isPresentationRequest(submittedPrompt);
 
     setLoading(true);
     setError("");
     setResponse("");
-    setCopied(false);
+    setDownloadUrl("");
+    setLastMessage(submittedPrompt);
+    setLastFile(submittedFile);
 
     try {
-      const result = await fetch(`${API_URL}/api/generate`, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          prompt,
-          model: selectedModel,
-        }),
-      });
+      if (shouldGeneratePresentation) {
+        await generatePresentation();
+      } else {
+        setJobStage("");
+        setJobProgress(0);
 
-      const data = await result.json();
+        let res;
 
-      if (!result.ok) {
-        throw new Error(data.detail || "Generation failed.");
+        if (submittedFile) {
+          const formData = new FormData();
+
+          formData.append("file", submittedFile);
+          formData.append("model", model);
+
+          res = await fetch(`${API_URL}/api/summarize`, {
+            method: "POST",
+            body: formData,
+          });
+        } else {
+          res = await fetch(`${API_URL}/api/generate`, {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              prompt: submittedPrompt,
+              model,
+            }),
+          });
+        }
+
+        const data = await res.json();
+
+        if (!res.ok) {
+          throw new Error(data.detail || "Something went wrong.");
+        }
+
+        setResponse(
+          submittedFile ? data.summary : data.response
+        );
       }
 
-      setResponse(data.response);
+      setPrompt("");
+      clearAttachment();
+
     } catch (err) {
       setError(err.message);
     } finally {
@@ -121,187 +282,280 @@ function App() {
     }
   }
 
+  function handleKeyDown(e) {
+    if (e.key === "Enter" && !e.shiftKey) {
+      e.preventDefault();
+      submitMessage();
+    }
+  }
+
   async function copyResponse() {
     try {
       await navigator.clipboard.writeText(response);
-      setCopied(true);
-      setTimeout(() => setCopied(false), 1500);
     } catch {
       setError("Unable to copy response.");
     }
   }
 
-  function clearWorkspace() {
-    if (loading) return;
-    setPrompt("");
-    setResponse("");
-    setError("");
-    setCopied(false);
-  }
-
   return (
-    <main className="app">
-      <header className="header">
+    <main className="chat-app">
+
+      {/* HEADER */}
+
+      <header className="chat-header">
         <div className="brand">
           <div className="brand-icon">AI</div>
-          <span>LOCAL AI</span>
+          <strong>LOCAL AI</strong>
         </div>
 
-        <div className="header-right">
-          <span className={`connection ${connection}`}>
-            <span className="status-dot" />
-            {connection === "connected"
-              ? "Ollama connected"
-              : connection === "checking"
-              ? "Checking connection"
-              : "Ollama unavailable"}
-          </span>
+        <div className={`connection ${connection}`}>
+          <span className="status-dot" />
+
+          {connection === "connected"
+            ? "Ollama connected"
+            : connection === "checking"
+            ? "Connecting..."
+            : "Ollama offline"}
         </div>
+
+        <button className="refresh" onClick={loadModels}>
+          ↻
+        </button>
       </header>
 
-      <section className="workspace">
-        <div className="intro">
-          <span className="eyebrow">LOCAL AI WORKSPACE</span>
-          <h1>What can I help you with?</h1>
-          <p>
-            Your AI assistant, powered entirely by locally
-            running models.
-          </p>
-        </div>
+      {/* CHAT AREA */}
 
-        <section className="panel">
-          <div className="panel-top">
-            <div>
-              <label htmlFor="model">AI MODEL</label>
-              <p className="field-description">
-                Choose an installed Ollama model
-              </p>
-            </div>
+      <section className="chat-content">
 
-            <button
-              className="refresh"
-              onClick={loadModels}
-              disabled={connection === "checking" || loading}
-              title="Refresh available models"
-            >
-              ↻ Refresh
-            </button>
+        {!response && !loading && (
+          <div className="welcome">
+            <div className="welcome-icon">✦</div>
+
+            <h1>What can I help you with?</h1>
+
+            <p>
+              Your AI assistant, powered by locally running models.
+            </p>
           </div>
+        )}
 
-          <select
-            id="model"
-            value={selectedModel}
-            onChange={(e) => setSelectedModel(e.target.value)}
-            disabled={!models.length || loading}
-          >
-            {models.length === 0 && (
-              <option value="">No models available</option>
-            )}
+        {(response || loading || lastMessage) && (
+          <div className="conversation">
 
-            {models.map((model) => (
-              <option key={model} value={model}>
-                {model}
-              </option>
-            ))}
-          </select>
-
-          <div className="input-heading">
-            <label htmlFor="prompt">YOUR PROMPT</label>
-            <span>{prompt.length.toLocaleString()} characters</span>
-          </div>
-
-          <textarea
-            id="prompt"
-            placeholder="Ask anything... e.g. Create a Python palindrome function."
-            value={prompt}
-            onChange={(e) => setPrompt(e.target.value)}
-            onKeyDown={(e) => {
-              if (e.key === "Enter" && e.metaKey) {
-                generateResponse();
-              }
-            }}
-            disabled={loading}
-          />
-
-          <div className="actions">
-            <button
-              className="clear-button"
-              onClick={clearWorkspace}
-              disabled={loading || (!prompt && !response)}
-            >
-              Clear
-            </button>
-
-            <button
-              className="generate"
-              onClick={generateResponse}
-              disabled={loading || !prompt.trim() || !selectedModel}
-            >
-              {loading ? (
-                <>
-                  <span className="spinner" />
-                  Generating...
-                </>
-              ) : (
-                <>
-                  Generate response <span>→</span>
-                </>
+            <div className="user-message">
+              {lastFile && (
+                <div className="message-file">
+                  <span>▤</span>
+                  {lastFile.name}
+                </div>
               )}
-            </button>
-          </div>
 
-          <div className="keyboard-hint">
-            Press <kbd>⌘</kbd> + <kbd>Enter</kbd> to generate
-          </div>
-
-          {error && <div className="error">{error}</div>}
-        </section>
-
-        {(response || loading) && (
-          <section className="panel output">
-            <div className="output-header">
-              <div>
-                <span className="eyebrow">GENERATED OUTPUT</span>
-                <h2>Response</h2>
-              </div>
-
-              {response && (
-                <button className="copy-response" onClick={copyResponse}>
-                  {copied ? "✓ Copied" : "Copy response"}
-                </button>
-              )}
+              {lastMessage}
             </div>
 
             {loading ? (
-              <div className="loading-state">
-                <span className="spinner" />
-                <p>Waiting for your local AI model...</p>
-                <span>This may take a moment.</span>
+              <div className="assistant-message">
+
+                <div className="loading-indicator">
+                  <span className="spinner" />
+
+                  <span>
+                    {jobStage ||
+                      (lastFile
+                        ? "Analysing your document..."
+                        : "Generating response...")}
+                  </span>
+                </div>
+
+                {jobStage && (
+                  <div className="job-progress">
+                    <div className="job-progress-track">
+                      <div
+                        className="job-progress-fill"
+                        style={{ width: `${jobProgress}%` }}
+                      />
+                    </div>
+
+                    <div className="job-progress-label">
+                      <span>{jobStage}</span>
+                      <span>{jobProgress}%</span>
+                    </div>
+                  </div>
+                )}
+
               </div>
             ) : (
-              <article className="response-text">
-                <ReactMarkdown
-                  remarkPlugins={[remarkGfm]}
-                  components={{ code: MarkdownCode }}
-                >
+              <div className="assistant-message">
+
+                <ReactMarkdown remarkPlugins={[remarkGfm]}>
                   {response}
                 </ReactMarkdown>
-              </article>
-            )}
 
-            {response && (
-              <div className="output-footer">
-                Generated with {selectedModel}
+                {downloadUrl && (
+                  <a
+                    className="presentation-download"
+                    href={downloadUrl}
+                    download
+                  >
+                    ↓ Download PowerPoint
+                  </a>
+                )}
+
+                <button
+                  className="copy-response"
+                  onClick={copyResponse}
+                >
+                  Copy response
+                </button>
+
               </div>
             )}
-          </section>
+
+            <div ref={bottomRef} />
+          </div>
         )}
 
-        <footer className="footer">
-          <span>LOCAL AI GENERATOR</span>
-          <span>Powered by Ollama</span>
-        </footer>
       </section>
+
+      {/* COMPOSER */}
+
+      <section className="composer-container">
+
+        {file && (
+          <div className="attachment-preview">
+
+            <span className="attachment-icon">▤</span>
+
+            <div className="attachment-details">
+              <strong>{file.name}</strong>
+
+              <small>
+                {(file.size / 1024).toFixed(1)} KB
+              </small>
+            </div>
+
+            <button
+              onClick={clearAttachment}
+              disabled={loading}
+            >
+              ✕
+            </button>
+
+          </div>
+        )}
+
+        {presentationMode && (
+          <div className="template-selector">
+
+            <label htmlFor="template-select">
+              PowerPoint template
+            </label>
+
+            <select
+              id="template-select"
+              value={templateName}
+              onChange={(e) => setTemplateName(e.target.value)}
+              disabled={loading}
+            >
+              {templates.length === 0 && (
+                <option value="">
+                  No templates available
+                </option>
+              )}
+
+              {templates.map((template) => (
+                <option key={template} value={template}>
+                  {template}
+                </option>
+              ))}
+            </select>
+
+            {templatesError && (
+              <small className="template-error">
+                {templatesError}
+              </small>
+            )}
+
+          </div>
+        )}
+
+        <div className="composer">
+
+          <textarea
+            placeholder="Message your local AI..."
+            value={prompt}
+            onChange={(e) => setPrompt(e.target.value)}
+            onKeyDown={handleKeyDown}
+            rows={2}
+            disabled={loading}
+          />
+
+          <div className="composer-toolbar">
+
+            <div className="composer-left">
+
+              <button
+                className="attach-button"
+                onClick={() => fileInput.current?.click()}
+                disabled={loading}
+                title="Attach document"
+              >
+                +
+              </button>
+
+              <input
+                ref={fileInput}
+                type="file"
+                accept=".pdf,.docx,.txt"
+                hidden
+                onChange={(e) => attachFile(e.target.files[0])}
+              />
+
+              <select
+                value={model}
+                onChange={(e) => setModel(e.target.value)}
+                disabled={loading}
+              >
+                {models.map((item) => (
+                  <option key={item} value={item}>
+                    {item}
+                  </option>
+                ))}
+              </select>
+
+            </div>
+
+            <button
+              className="send-button"
+              onClick={submitMessage}
+              disabled={
+                loading ||
+                (!prompt.trim() && !file) ||
+                !model ||
+                (presentationMode && (
+                  !templateName || templates.length === 0
+                ))
+              }
+              title="Send message"
+            >
+              ↑
+            </button>
+
+          </div>
+        </div>
+
+        {error && <div className="error">{error}</div>}
+
+        <p className="composer-hint">
+          PDF, DOCX and TXT supported · Enter to send · Shift + Enter for a new line
+        </p>
+
+      </section>
+
+      <footer className="chat-footer">
+        Powered by Ollama · Runs locally
+      </footer>
+
     </main>
   );
 }
